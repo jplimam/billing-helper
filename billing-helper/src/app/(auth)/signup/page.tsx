@@ -1,5 +1,3 @@
-"use client";
-
 import Stepper from "@/components/Stepper/page";
 import { Field } from "@/components/ui/field";
 import { Button, Input, Link } from "@chakra-ui/react";

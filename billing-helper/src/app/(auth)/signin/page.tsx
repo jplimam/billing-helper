@@ -1,5 +1,3 @@
-"use client";
-
 import { Field } from "@/components/ui/field";
 import { Button, Input } from "@chakra-ui/react";
 import Image from "next/image";
