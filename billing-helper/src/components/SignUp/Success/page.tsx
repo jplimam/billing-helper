@@ -27,7 +27,7 @@ export default function Success(): JSX.Element {
                 scale: 1,
                 opacity: 1,
                 transition: {
-                  delay: 0.4,
+                  delay: 0.1,
                 },
               },
             }}

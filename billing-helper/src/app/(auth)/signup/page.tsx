@@ -7,15 +7,14 @@ import Success from "@/components/SignUp/Success/page";
 import Stepper from "@/components/Stepper/page";
 import { JSX } from "@emotion/react/jsx-runtime";
 import { useState } from "react";
-
-type stepsType = "first-step" | "second-step" | "third-step";
+import { StepsType } from "@/types/stepTypes";
 
 export default function SignUp(): JSX.Element {
-  let [step, setStep] = useState<stepsType>("third-step");
+  const [step, setStep] = useState<StepsType>("first-step");
 
   const stepContent = {
-    "first-step": <NameEmail />,
-    "second-step": <Password />,
+    "first-step": <NameEmail setStep={setStep} />,
+    "second-step": <Password setStep={setStep} />,
     "third-step": <Success />,
   };
 
@@ -36,7 +35,7 @@ export default function SignUp(): JSX.Element {
         {stepContent[step]}
       </motion.div>
       <div className="flex justify-center pt-24">
-        <Stepper />
+        <Stepper step={step} />
       </div>
     </div>
   );
