@@ -1,9 +1,14 @@
 import Sidebar from "@/components/Dashboard/Sidebar/page"
+import Navbar from "@/components/Dashboard/Navbar/page";
 
-export default function Home() {
+export default function Dashboard() {
   return (
     <>
-      <Sidebar></Sidebar>
+      <Sidebar/>
+      <div className="h-screen ml-28">
+        <Navbar/>
+      </div>
+      
     </>
   );
 }
