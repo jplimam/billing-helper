@@ -1,9 +1,8 @@
-import { JSX } from "@emotion/react/jsx-runtime";
 import { Field } from "@/components/ui/field";
 import { Button, Input, Link } from "@chakra-ui/react";
 import Image from "next/image";
 
-export default function NameEmail(): JSX.Element {
+export default function NameEmail() {
   return (
     <div className="flex gap-48 flex-col  bg-gray-900">
       <header className="flex justify-center pt-5">

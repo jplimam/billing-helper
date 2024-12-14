@@ -5,12 +5,11 @@ import NameEmail from "@/components/SignUp/NameEmail/page";
 import Password from "@/components/SignUp/Password/page";
 import Success from "@/components/SignUp/Success/page";
 import Stepper from "@/components/Stepper/page";
-import { JSX } from "@emotion/react/jsx-runtime";
 import { useState } from "react";
 
 type stepsType = "first-step" | "second-step" | "third-step";
 
-export default function SignUp(): JSX.Element {
+export default function SignUp() {
   let [step, setStep] = useState<stepsType>("third-step");
 
   const stepContent = {

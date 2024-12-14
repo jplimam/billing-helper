@@ -1,12 +1,11 @@
 "use client";
 
 import { Button } from "@chakra-ui/react";
-import { JSX } from "@emotion/react/jsx-runtime";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Success(): JSX.Element {
+export default function Success() {
   return (
     <div className="flex gap-48 flex-col  bg-gray-900">
       <header className="flex justify-center pt-5">
