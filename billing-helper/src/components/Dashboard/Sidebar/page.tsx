@@ -27,12 +27,8 @@ export default function Sidebar() {
                 setIndicatorHeight(Math.floor(refCharges.current.getBoundingClientRect().top + (refIndicator.current.clientHeight - refCharges.current.clientHeight)/2))
 
             }
-            else {
-                //how tf do you get here?
-            }
         }
     }, [currentSelected])
-    //FIXME: all refs perma returning 128 height, fix that shi
 
     return(
         <div className="bg-gray-900 w-28 h-screen flex flex-row">
@@ -57,7 +53,7 @@ export default function Sidebar() {
                 </div>
 
             </div>
-            <div ref={refIndicator} className="relative w-8 max-h-[10%] bg-amber-100 transition-all duration-300 ease-in-out" style={{top: `${indicatorHeight}px`}}>
+            <div ref={refIndicator} className="relative w-8 h-[95px] bg-amber-100 transition-all duration-300 ease-in-out" style={{top: `${indicatorHeight}px`}}>
 
             </div>
 
