@@ -6,15 +6,14 @@ import Password from "@/components/SignUp/Password/page";
 import Success from "@/components/SignUp/Success/page";
 import Stepper from "@/components/Stepper/page";
 import { useState } from "react";
+import { StepsType } from "@/types/stepTypes";
 
-type stepsType = "first-step" | "second-step" | "third-step";
-
-export default function SignUp() {
-  let [step, setStep] = useState<stepsType>("third-step");
+export default function SignUp(): JSX.Element {
+  const [step, setStep] = useState<StepsType>("first-step");
 
   const stepContent = {
-    "first-step": <NameEmail />,
-    "second-step": <Password />,
+    "first-step": <NameEmail setStep={setStep} />,
+    "second-step": <Password setStep={setStep} />,
     "third-step": <Success />,
   };
 
@@ -35,7 +34,7 @@ export default function SignUp() {
         {stepContent[step]}
       </motion.div>
       <div className="flex justify-center pt-24">
-        <Stepper />
+        <Stepper step={step} />
       </div>
     </div>
   );
