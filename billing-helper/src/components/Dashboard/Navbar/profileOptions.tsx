@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 export default function ProfileOptions(){
     return(
         
-        <motion.div className="bg-[#F8FAFC] text-slate-800 my-2 rounded-xl h-[900px]"
+        <motion.div className="bg-[#F8FAFC] text-slate-800 my-2 rounded-xl h-[900px] z-10 shadow-2xl"
         initial={{ opacity: 0, translateY: 10 }}
         animate={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 0.3}}>
