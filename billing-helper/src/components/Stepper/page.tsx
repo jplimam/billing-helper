@@ -30,7 +30,7 @@ export default function Stepper({ step }: any): JSX.Element {
       </div>
     );
   }
-
+  
   return (
     <>
       <h1>Error</h1>

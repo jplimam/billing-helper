@@ -5,7 +5,6 @@ import NameEmail from "@/components/SignUp/NameEmail/page";
 import Password from "@/components/SignUp/Password/page";
 import Success from "@/components/SignUp/Success/page";
 import Stepper from "@/components/Stepper/page";
-import { JSX } from "@emotion/react/jsx-runtime";
 import { useState } from "react";
 import { StepsType } from "@/types/stepTypes";
 
